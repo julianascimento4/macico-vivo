@@ -183,6 +183,32 @@ h1 {
     padding: 5px;
 }
 
+/* Define o vídeo de fundo */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; /* Ocupa 100% da largura */
+    min-height: 100%; /* Ocupa 100% da altura */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    object-fit: cover; /* Faz o vídeo cobrir a tela inteira sem distorcer */
+  }
+  
+  /* Estiliza o conteúdo sobre o vídeo */
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  h1, p {
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor legibilidade */
+  }
+  
 
 /* Rodapé */
 footer {
