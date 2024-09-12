@@ -203,6 +203,18 @@ h1 {
     padding: 20px;
   }
   
+  /* Define uma largura e altura uniforme para as imagens */
+.uniform-size {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px;
+    object-fit: cover; /* Garante que a imagem seja redimensionada sem distorção */
+}
+
+/* Espaçamento entre as imagens */
+.image-gallery a {
+    margin: 0 10px; /* Adiciona espaçamento entre os links */
+}
+
 /* Rodapé */
 footer {
     text-align: center;
@@ -217,6 +229,8 @@ footer {
 footer p {
     margin: 0;
 }
+
+
 
 /* Layout responsivo */
 @media (max-width: 768px) {
