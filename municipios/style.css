@@ -159,7 +159,7 @@ h1 {
     font-weight: bold;
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
-    color: #007b5e;
+    color: #007a5e;
 }
 
 .topic p {
@@ -215,21 +215,71 @@ h1 {
     margin: 0 10px; /* Adiciona espaçamento entre os links */
 }
 
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #007b5e;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+/* Estilo para a imagem de fundo */
+.hero-image {
+    background-image: url('/assets/acarape/acarape-vista.png');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
-footer p {
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 20px;
+}
+
+/* Estilo para os blocos de destaque */
+.bloco {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.bloco h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.bloco p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #004080;
+    color: #007a5e;
+}
+
+.footer p {
     margin: 0;
 }
 
+.footer img {
+    margin-left: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.footer img:hover {
+    opacity: 0.8;
+}
 
 
 /* Layout responsivo */
