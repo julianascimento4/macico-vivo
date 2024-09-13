@@ -215,22 +215,25 @@ h1 {
     margin: 0 10px; /* Adiciona espaçamento entre os links */
 }
 
-/* Estilo do botão */
-#mute-btn {
+/* Estilo do botão no formato de ícone */
+.audio-btn {
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
     z-index: 100;
-    background-color: #007bff;
-    color: white;
+    background-color: transparent;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
     cursor: pointer;
+    padding: 0;
 }
 
-#mute-btn:hover {
-    background-color: #0056b3;
+.audio-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.audio-btn:hover img {
+    opacity: 0.7;
 }
 
 

@@ -7,12 +7,15 @@ window.addEventListener('load', function() {
 // Função para ativar ou desativar o áudio
 document.getElementById('mute-btn').addEventListener('click', function() {
     var audio = document.getElementById('background-audio');
+    var icon = document.getElementById('audio-icon');
     
     if (audio.muted) {
         audio.muted = false;
-        this.textContent = 'Desativar áudio';
+        icon.src = 'assets/volume-up.svg';  // Ícone de áudio ligado
+        icon.alt = 'Audio On';
     } else {
         audio.muted = true;
-        this.textContent = 'Ativar áudio';
+        icon.src = 'assets/volume-mute.svg';  // Ícone de áudio desligado
+        icon.alt = 'Audio Off';
     }
 });
