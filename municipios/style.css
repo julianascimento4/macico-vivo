@@ -1,0 +1,252 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100%;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background: #007b5e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Navegação centralizada */
+nav {
+    margin: 0 auto;
+    text-align: center;
+    background: #007b5e;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Estilo para a tag nav com fundo transparente */
+.home-pag {
+    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
+    padding: 10px 0; /* Adicione padding conforme necessário */
+    position: fixed; /* Faz com que a navegação fique fixa no topo */
+    width: 100%; /* Garante que a navegação ocupe toda a largura da página */
+    top: 0; /* Posiciona a navegação no topo da página */
+    left: 0; /* Garante que a navegação esteja alinhada à esquerda */
+    z-index: 1000; /* Garante que a navegação fique acima de outros elementos */
+}
+
+/* Estilo para os links da navegação */
+.nav-link {
+    color: #000; /* Cor do texto dos links da navegação */
+}
+
+.nav-link:hover {
+    color: #ffeb3b; /* Cor do texto ao passar o mouse sobre os links */
+}
+
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    background: white;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    max-width: 1200px;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #007b5e;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Estilo de botões */
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    background: #007b5e;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #005f46;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */}
+
+.navbar ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+.image-container {
+    text-align: center; /* Centralizar as imagens e textos */
+    margin-bottom: 20px; /* Espaçamento inferior entre as linhas */
+}
+
+.image-container img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto;
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Centraliza o título H1 */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #007b5e;
+    text-align: center; /* Centralizar o título principal */
+}
+
+.topic {
+    margin-bottom: 1.5rem;
+    text-align: left; /* Alinhamento à esquerda dos tópicos */
+}
+
+.topic-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #007b5e;
+}
+
+.topic p {
+    margin-left: 0; /* Removendo o recuo para alinhar completamente à esquerda */
+    color: #000;
+    text-align: left; /* Alinhamento à esquerda das descrições */
+}
+
+/* Estilo para bordas coloridas nas imagens ao passar o mouse */
+.image-container img {
+    transition: border-color 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    border: 5px solid #ffeb3b; /* Cor da borda ao passar o mouse */
+    border-radius: 5px; /* Arredondar os cantos da borda */
+}
+
+/* Adiciona um espaço entre as imagens e a borda */
+.image-container {
+    padding: 5px;
+}
+
+/* Define o vídeo de fundo */
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; /* Ocupa 100% da largura */
+    min-height: 100%; /* Ocupa 100% da altura */
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
+    object-fit: cover; /* Faz o vídeo cobrir a tela inteira sem distorcer */
+  }
+  
+  /* Estiliza o conteúdo sobre o vídeo */
+  .content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Define uma largura e altura uniforme para as imagens */
+.uniform-size {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: 150px;
+    object-fit: cover; /* Garante que a imagem seja redimensionada sem distorção */
+}
+
+/* Espaçamento entre as imagens */
+.image-gallery a {
+    margin: 0 10px; /* Adiciona espaçamento entre os links */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #007b5e;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+/* Layout responsivo */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
