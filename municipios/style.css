@@ -354,6 +354,23 @@ h1 {
     position: relative;
 }
 
+.hero-image11 {
+    background-image: url('/assets/municipios/palmarcia.jpg');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-image12 {
+    background-image: url('/assets/municipios/redenção.jpg');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 /* Estilo para os blocos de destaque */
 .bloco {
     background-color: #f8f9fa;
