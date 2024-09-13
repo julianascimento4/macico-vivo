@@ -266,6 +266,18 @@ h4 {
   text-align: center;
 }
 
+
+.logo {
+  max-height: 32px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
 /* Rodapé */
 footer {
   text-align: center;
