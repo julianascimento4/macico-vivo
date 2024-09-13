@@ -264,7 +264,7 @@ h1 {
 
 /* Estilo do rodapé */
 .footer {
-    background-color: #004080;
+    background-color: #007a5e;
     color: #007a5e;
 }
 
@@ -274,7 +274,7 @@ h1 {
 
 .footer img {
     margin-left: 15px;
-    filter: brightness(0) invert(1);
+    filter: none;
 }
 
 .footer img:hover {
