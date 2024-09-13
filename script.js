@@ -11,11 +11,11 @@ document.getElementById('mute-btn').addEventListener('click', function() {
     
     if (audio.muted) {
         audio.muted = false;
-        icon.src = 'assets/volume-up.svg';  // Ícone de áudio ligado
+        icon.src = 'assets/volume.png';  // Ícone de áudio ligado
         icon.alt = 'Audio On';
     } else {
         audio.muted = true;
-        icon.src = 'assets/volume-mute.svg';  // Ícone de áudio desligado
+        icon.src = 'assets/volume-mute.png';  // Ícone de áudio desligado
         icon.alt = 'Audio Off';
     }
 });
