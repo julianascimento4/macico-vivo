@@ -291,6 +291,15 @@ h1 {
     position: relative;
 }
 
+.hero-image4 {
+    background-image: url('/assets/municipios/baturité.jpg');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 /* Estilo para os blocos de destaque */
 .bloco {
     background-color: #f8f9fa;
