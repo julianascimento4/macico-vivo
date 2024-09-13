@@ -273,6 +273,15 @@ h1 {
     font-size: 20px;
 }
 
+.hero-image2 {
+    background-image: url('/assets/municipios/aratuba.jpg');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 /* Estilo para os blocos de destaque */
 .bloco {
     background-color: #f8f9fa;
