@@ -287,6 +287,22 @@ footer p {
 }
 
 /* Layout responsivo */
+@media (max-width: 1024px) {
+  main {
+    margin: 15px;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Layout responsivo para smartphones */
 @media (max-width: 768px) {
   nav ul li {
     display: block;
@@ -302,5 +318,32 @@ footer p {
     display: block;
     width: 100%;
     text-align: center;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Layout responsivo para dispositivos menores */
+@media (max-width: 480px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+
+  main {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
