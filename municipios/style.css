@@ -52,27 +52,6 @@ nav ul li a:hover {
     color: #ffeb3b;
 }
 
-/* Estilo para a tag nav com fundo transparente */
-.home-pag {
-    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
-    padding: 10px 0; /* Adicione padding conforme necessário */
-    position: fixed; /* Faz com que a navegação fique fixa no topo */
-    width: 100%; /* Garante que a navegação ocupe toda a largura da página */
-    top: 0; /* Posiciona a navegação no topo da página */
-    left: 0; /* Garante que a navegação esteja alinhada à esquerda */
-    z-index: 1000; /* Garante que a navegação fique acima de outros elementos */
-}
-
-/* Estilo para os links da navegação */
-.nav-link {
-    color: #000; /* Cor do texto dos links da navegação */
-}
-
-.nav-link:hover {
-    color: #ffeb3b; /* Cor do texto ao passar o mouse sobre os links */
-}
-
-
 /* Conteúdo principal */
 main {
     padding: 20px;
@@ -110,306 +89,24 @@ p {
     background: #005f46;
 }
 
-
+/* Ajuste de responsividade para a navbar */
 .navbar {
     display: flex;
-    justify-content: center; /* Centraliza os itens do menu */}
+    justify-content: center; /* Centraliza os itens do menu */
+}
 
 .navbar ul {
-    list-style: none; /* Remove os marcadores da lista */
+    list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
 .navbar li {
-    margin: 0 15px; /* Espaçamento entre os itens */
+    margin: 0 15px;
 }
 
-.image-container {
-    text-align: center; /* Centralizar as imagens e textos */
-    margin-bottom: 20px; /* Espaçamento inferior entre as linhas */
-}
-
-.image-container img {
-    max-width: 100%; /* Imagem responsiva */
-    height: auto;
-    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
-}
-
-/* Centraliza o título H1 */
-h1 {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.container h1 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #007b5e;
-    text-align: center; /* Centralizar o título principal */
-}
-
-.topic {
-    margin-bottom: 1.5rem;
-    text-align: left; /* Alinhamento à esquerda dos tópicos */
-}
-
-.topic-title {
-    font-weight: bold;
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: #007a5e;
-}
-
-.topic p {
-    margin-left: 0; /* Removendo o recuo para alinhar completamente à esquerda */
-    color: #000;
-    text-align: left; /* Alinhamento à esquerda das descrições */
-}
-
-/* Estilo para bordas coloridas nas imagens ao passar o mouse */
-.image-container img {
-    transition: border-color 0.3s ease-in-out;
-}
-
-.image-container img:hover {
-    border: 5px solid #ffeb3b; /* Cor da borda ao passar o mouse */
-    border-radius: 5px; /* Arredondar os cantos da borda */
-}
-
-/* Adiciona um espaço entre as imagens e a borda */
-.image-container {
-    padding: 5px;
-}
-
-/* Define o vídeo de fundo */
-#background-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; /* Ocupa 100% da largura */
-    min-height: 100%; /* Ocupa 100% da altura */
-    z-index: -1; /* Coloca o vídeo atrás do conteúdo */
-    object-fit: cover; /* Faz o vídeo cobrir a tela inteira sem distorcer */
-  }
-  
-  /* Estiliza o conteúdo sobre o vídeo */
-  .content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    color: white;
-    padding: 20px;
-  }
-  
-  /* Define uma largura e altura uniforme para as imagens */
-.uniform-size {
-    width: 150px; /* Ajuste o tamanho conforme necessário */
-    height: 150px;
-    object-fit: cover; /* Garante que a imagem seja redimensionada sem distorção */
-}
-
-/* Espaçamento entre as imagens */
-.image-gallery a {
-    margin: 0 10px; /* Adiciona espaçamento entre os links */
-}
-
-/* Estilo para a imagem de fundo */
-.hero-image {
-    background-image: url('/assets/acarape/acarape-vista.png');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero-text p {
-    font-size: 20px;
-}
-
-/* Estilo para a imagem de fundo */
-.hero-image1 {
-    background-image: url('/assets/aracoiaba/turismo.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.hero-text h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.hero-text p {
-    font-size: 20px;
-}
-
-.hero-image2 {
-    background-image: url('/assets/municipios/aratuba.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image3 {
-    background-image: url('/assets/municipios/barreira\ .jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image4 {
-    background-image: url('/assets/municipios/baturité.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image5 {
-    background-image: url('/assets/municipios/capistrano.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image6 {
-    background-image: url('/assets/municipios/guaramiranga.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image7 {
-    background-image: url('/assets/municipios/itapiuna.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image8 {
-    background-image: url('/assets/municipios/mulungu.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image9 {
-    background-image: url('/assets/municipios/ocara.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image10 {
-    background-image: url('/assets/municipios/pacoti.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image11 {
-    background-image: url('/assets/municipios/palmarcia.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.hero-image12 {
-    background-image: url('/assets/municipios/redenção.jpg');
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-/* Estilo para os blocos de destaque */
-.bloco {
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.bloco h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.bloco p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-/* Estilo do rodapé */
-.footer {
-    background-color: #007a5e;
-    color: #007a5e;
-}
-
-.footer p {
-    margin: 0;
-}
-
-.footer img {
-    margin-left: 15px;
-    filter: none;
-}
-
-.footer img:hover {
-    opacity: 0.8;
-}
-
-
-/* Layout responsivo */
+/* Layout responsivo para dispositivos pequenos */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
@@ -425,5 +122,48 @@ h1 {
         display: block;
         width: 100%;
         text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* Layout responsivo para tablets */
+@media (max-width: 1024px) {
+    header {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    main {
+        max-width: 800px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Layout responsivo para dispositivos maiores (monitores grandes) */
+@media (min-width: 1200px) {
+    main {
+        max-width: 1400px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .hero-text p {
+        font-size: 24px;
+    }
+
+    .navbar li {
+        margin: 0 30px;
     }
 }
