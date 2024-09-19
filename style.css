@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   color: #333;
@@ -19,7 +20,7 @@ header {
   color: white;
   padding: 10px 0;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Navegação centralizada */
@@ -54,13 +55,19 @@ nav ul li a:hover {
 
 /* Estilo para a tag nav com fundo transparente */
 .home-pag {
-  background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Cor branca com 50% de opacidade */
   padding: 10px 0; /* Adicione padding conforme necessário */
   position: fixed; /* Faz com que a navegação fique fixa no topo */
   width: 100%; /* Garante que a navegação ocupe toda a largura da página */
   top: 0; /* Posiciona a navegação no topo da página */
   left: 0; /* Garante que a navegação esteja alinhada à esquerda */
   z-index: 1000; /* Garante que a navegação fique acima de outros elementos */
+  margin-bottom: 20px;
 }
 
 /* Estilo para os links da navegação */
@@ -72,18 +79,19 @@ nav ul li a:hover {
   color: #ffeb3b; /* Cor do texto ao passar o mouse sobre os links */
 }
 
-
 /* Conteúdo principal */
 main {
   padding: 20px;
   background: white;
   margin: 20px auto;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   max-width: 1200px;
   border-radius: 5px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
@@ -110,10 +118,10 @@ p {
   background: #005f46;
 }
 
-
 .navbar {
   display: flex;
-  justify-content: center; /* Centraliza os itens do menu */}
+  justify-content: center; /* Centraliza os itens do menu */
+}
 
 .navbar ul {
   list-style: none; /* Remove os marcadores da lista */
@@ -159,7 +167,7 @@ h1 {
   font-weight: bold;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
-  color: #007a5e;
+  color: #007b5e;
 }
 
 .topic p {
@@ -183,24 +191,32 @@ h1 {
   padding: 5px;
 }
 
-/* Define o vídeo de fundo */
+/* Estilos para o vídeo de fundo */
 #background-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; /* Ocupa 100% da largura */
-  min-height: 100%; /* Ocupa 100% da altura */
-  z-index: -1; /* Coloca o vídeo atrás do conteúdo */
-  object-fit: cover; /* Faz o vídeo cobrir a tela inteira sem distorcer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Mantém a proporção do vídeo sem distorção */
+  position: relative;
+  width: calc(100% - 40px); /* Largura total menos os espaços das bordas */
+  height: calc(
+    100vh - 60px
+  ); /* Altura da tela menos o espaço superior e inferior */
+  margin: 20px; /* Espaço das bordas da página */
+  overflow: hidden; /* Oculta qualquer parte do vídeo que ultrapasse o contêiner */
 }
 
-/* Estiliza o conteúdo sobre o vídeo */
-.content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  color: white;
-  padding: 20px;
+/* Estilos para o controle de áudio */
+.audio-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
 }
 
 /* Define uma largura e altura uniforme para as imagens */
@@ -215,215 +231,76 @@ h1 {
   margin: 0 10px; /* Adiciona espaçamento entre os links */
 }
 
-/* Estilo para a imagem de fundo */
-.hero-image {
-  background-image: url('/assets/acarape/acarape-vista.png');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+/* Estilo do botão no formato de ícone */
+.audio-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+.audio-btn img {
+  width: 40px;
+  height: 40px;
 }
 
-.hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+.audio-btn:hover img {
+  opacity: 0.7;
 }
 
-.hero-text p {
-  font-size: 20px;
-}
-
-/* Estilo para a imagem de fundo */
-.hero-image1 {
-  background-image: url('/assets/aracoiaba/turismo.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.hero-text p {
-  font-size: 20px;
-}
-
-.hero-image2 {
-  background-image: url('/assets/municipios/aratuba.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image3 {
-  background-image: url('/assets/municipios/barreira\ .jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image4 {
-  background-image: url('/assets/municipios/baturité.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image5 {
-  background-image: url('/assets/municipios/capistrano.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image6 {
-  background-image: url('/assets/municipios/guaramiranga.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image7 {
-  background-image: url('/assets/municipios/itapiuna.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image8 {
-  background-image: url('/assets/municipios/mulungu.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image9 {
-  background-image: url('/assets/municipios/ocara.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image10 {
-  background-image: url('/assets/municipios/pacoti.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image11 {
-  background-image: url('/assets/municipios/palmarcia.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-image12 {
-  background-image: url('/assets/municipios/redenção.jpg');
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-/* Estilo para os blocos de destaque */
-.bloco {
-  background-color: #f8f9fa;
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: box-shadow 0.3s ease;
 }
 
-.bloco h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
+h4 {
+  color: #000;
+  text-align: center;
 }
 
-.bloco p {
-  font-size: 16px;
-  margin-bottom: 10px;
+
+.logo {
+  max-height: 32px;
 }
 
-/* Estilo do rodapé */
-.footer {
-  background-color: #007a5e;
-  color: #007a5e;
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #007b5e;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.footer p {
+footer p {
   margin: 0;
 }
-
-.footer img {
-  margin-left: 15px;
-  filter: none;
-}
-
-.footer img:hover {
-  opacity: 0.8;
-}
-
 
 /* Layout responsivo */
 @media (max-width: 768px) {
   nav ul li {
-      display: block;
-      margin: 10px 0;
+    display: block;
+    margin: 10px 0;
   }
 
   main {
-      margin: 10px;
-      padding: 15px;
+    margin: 10px;
+    padding: 15px;
   }
 
   .btn {
-      display: block;
-      width: 100%;
-      text-align: center;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
 }
