@@ -410,6 +410,7 @@ h1 {
 
 
 /* Layout responsivo */
+/* Layout responsivo para dispositivos pequenos */
 @media (max-width: 768px) {
     nav ul li {
         display: block;
@@ -425,5 +426,48 @@ h1 {
         display: block;
         width: 100%;
         text-align: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* Layout responsivo para tablets */
+@media (max-width: 1024px) {
+    header {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+
+    main {
+        max-width: 800px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Layout responsivo para dispositivos maiores (monitores grandes) */
+@media (min-width: 1200px) {
+    main {
+        max-width: 1400px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .hero-text p {
+        font-size: 24px;
+    }
+
+    .navbar li {
+        margin: 0 30px;
     }
 }
