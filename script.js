@@ -19,3 +19,11 @@ document.getElementById("mute-btn").addEventListener("click", function () {
     icon.alt = "Audio Off";
   }
 });
+
+const video = document.getElementById('background-video');
+
+// Alterna entre o tamanho padrão e fullscreen ao clicar no vídeo
+video.addEventListener('click', () => {
+  video.classList.toggle('fullscreen');
+});
+
