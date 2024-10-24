@@ -169,15 +169,14 @@ p {
 
 /* Estilos para o vídeo de fundo */
 #background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  margin: 20px; 
-  overflow: hidden; 
+  float: right; 
+  padding: 50px; 
+  margin: 50px;
 }
+
+/* Estilos para o texto da pagina home */
+
+
 
 /* Estilos para o controle de áudio */
 .audio-btn {
