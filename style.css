@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Estilos Gerais */
 body,
 html {
   font-family: Arial, Helvetica, sans-serif;
@@ -14,7 +15,7 @@ html {
   min-height: 100%;
 }
 
-/* Estilo para o cabeçalho */
+/* Cabeçalho */
 header {
   background: #007b5e;
   color: white;
@@ -23,7 +24,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Navegação centralizada */
+/* Navegação */
 nav {
   margin: 0 auto;
   text-align: center;
@@ -53,33 +54,28 @@ nav ul li a:hover {
   color: #ffeb3b;
 }
 
-/* Estilo para a tag nav com fundo transparente */
+/* Navegação com fundo transparente */
 .home-pag {
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Cor branca com 50% de opacidade */
-  padding: 10px 0; /* Adicione padding conforme necessário */
-  position: fixed; /* Faz com que a navegação fique fixa no topo */
-  width: 100%; /* Garante que a navegação ocupe toda a largura da página */
-  top: 0; /* Posiciona a navegação no topo da página */
-  left: 0; /* Garante que a navegação esteja alinhada à esquerda */
-  z-index: 1000; /* Garante que a navegação fique acima de outros elementos */
+  background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
+  padding: 10px 0; 
+  position: fixed; 
+  width: 100%; 
+  top: 0; 
+  left: 0; 
+  z-index: 1000; 
   margin-bottom: 20px;
 }
 
-/* Estilo para os links da navegação */
+/* Estilos para links da navegação */
 .nav-link {
-  color: #000; /* Cor do texto dos links da navegação */
+  color: #000; 
 }
 
 .nav-link:hover {
-  color: #ffeb3b; /* Cor do texto ao passar o mouse sobre os links */
+  color: #ffeb3b; 
 }
 
-/* Conteúdo principal */
+/* Conteúdo Principal */
 main {
   padding: 20px;
   background: white;
@@ -102,7 +98,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* Estilo de botões */
+/* Estilos de Botões */
 .btn {
   display: inline-block;
   font-size: 16px;
@@ -118,49 +114,30 @@ p {
   background: #005f46;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center; /* Centraliza os itens do menu */
-}
-
-.navbar ul {
-  list-style: none; /* Remove os marcadores da lista */
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-.navbar li {
-  margin: 0 15px; /* Espaçamento entre os itens */
-}
-
+/* Galeria de Imagens */
 .image-container {
-  text-align: center; /* Centralizar as imagens e textos */
-  margin-bottom: 20px; /* Espaçamento inferior entre as linhas */
+  text-align: center; 
+  margin-bottom: 20px; 
 }
 
 .image-container img {
-  max-width: 100%; /* Imagem responsiva */
+  max-width: 100%; 
   height: auto;
-  margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+  margin-bottom: 10px; 
 }
 
-/* Centraliza o título H1 */
-h1 {
-  text-align: center;
-  margin-top: 20px;
-}
-
+/* Centralização do título H1 */
 .container h1 {
   font-size: 2rem;
   margin-bottom: 30px;
   color: #007b5e;
-  text-align: center; /* Centralizar o título principal */
+  text-align: center; 
 }
 
+/* Tópicos */
 .topic {
   margin-bottom: 1.5rem;
-  text-align: left; /* Alinhamento à esquerda dos tópicos */
+  text-align: left; 
 }
 
 .topic-title {
@@ -171,9 +148,9 @@ h1 {
 }
 
 .topic p {
-  margin-left: 0; /* Removendo o recuo para alinhar completamente à esquerda */
+  margin-left: 0; 
   color: #000;
-  text-align: left; /* Alinhamento à esquerda das descrições */
+  text-align: left; 
 }
 
 /* Estilo para bordas coloridas nas imagens ao passar o mouse */
@@ -182,11 +159,10 @@ h1 {
 }
 
 .image-container img:hover {
-  border: 5px solid #ffeb3b; /* Cor da borda ao passar o mouse */
-  border-radius: 5px; /* Arredondar os cantos da borda */
+  border: 5px solid #ffeb3b; 
+  border-radius: 5px; 
 }
 
-/* Adiciona um espaço entre as imagens e a borda */
 .image-container {
   padding: 5px;
 }
@@ -198,14 +174,9 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Mantém a proporção do vídeo sem distorção */
-  position: relative;
-  width: calc(100% - 40px); /* Largura total menos os espaços das bordas */
-  height: calc(
-    100vh - 60px
-  ); /* Altura da tela menos o espaço superior e inferior */
-  margin: 20px; /* Espaço das bordas da página */
-  overflow: hidden; /* Oculta qualquer parte do vídeo que ultrapasse o contêiner */
+  object-fit: cover; 
+  margin: 20px; 
+  overflow: hidden; 
 }
 
 /* Estilos para o controle de áudio */
@@ -216,31 +187,7 @@ h1 {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1000; /* Garante que o botão esteja acima de outros elementos */
-}
-
-/* Define uma largura e altura uniforme para as imagens */
-.uniform-size {
-  width: 150px; /* Ajuste o tamanho conforme necessário */
-  height: 150px;
-  object-fit: cover; /* Garante que a imagem seja redimensionada sem distorção */
-}
-
-/* Espaçamento entre as imagens */
-.image-gallery a {
-  margin: 0 10px; /* Adiciona espaçamento entre os links */
-}
-
-/* Estilo do botão no formato de ícone */
-.audio-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 100;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+  z-index: 1000; 
 }
 
 .audio-btn img {
@@ -252,6 +199,7 @@ h1 {
   opacity: 0.7;
 }
 
+/* Cartão */
 .card {
   background-color: #fff;
   border-radius: 10px;
@@ -265,7 +213,6 @@ h4 {
   color: #000;
   text-align: center;
 }
-
 
 .logo {
   max-height: 32px;
@@ -286,7 +233,7 @@ footer p {
   margin: 0;
 }
 
-/* Layout responsivo */
+/* Layout Responsivo */
 @media (max-width: 1024px) {
   main {
     margin: 15px;
@@ -302,7 +249,6 @@ footer p {
   }
 }
 
-/* Layout responsivo para smartphones */
 @media (max-width: 768px) {
   nav ul li {
     display: block;
@@ -326,7 +272,6 @@ footer p {
   }
 }
 
-/* Layout responsivo para dispositivos menores */
 @media (max-width: 480px) {
   body,
   html {
@@ -345,5 +290,22 @@ footer p {
   .btn {
     font-size: 14px;
     padding: 8px 16px;
+  }
+}
+
+/* Ajuste responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .text-content {
+    text-align: center; 
+    font-size: 1.5rem;
+  }
+
+  .video-container {
+    width: 100%; 
   }
 }
