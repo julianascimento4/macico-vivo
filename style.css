@@ -1,15 +1,14 @@
 /* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
+/* {
+  margin: 0p;
+  padding: 0px;
   box-sizing: border-box;
-}
+}*/
 
 /* Estilos Gerais */
 body,
 html {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
   color: #333;
   line-height: 1.6;
   min-height: 100%;
@@ -174,9 +173,11 @@ p {
   margin: 50px;
 }
 
-/* Estilos para o texto da pagina home */
-
-
+.texto{
+  padding: 150px;
+  margin: 50px;
+  font-family: "Arima", system-ui;
+}
 
 /* Estilos para o controle de áudio */
 .audio-btn {
@@ -186,7 +187,7 @@ p {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1000; 
+  z-index: 1000;
 }
 
 .audio-btn img {
