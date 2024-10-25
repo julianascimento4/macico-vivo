@@ -187,13 +187,14 @@ p {
 
 #background-video.fullscreen {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  width:100vw;
+  height:100vh;
   z-index: 1000; 
   margin: 0;
-  border-radius: 0;
+  border-radius: 15px;
 }
 
 .texto{
@@ -338,5 +339,16 @@ footer p {
 
   .video-container {
     width: 100%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+      flex-direction: column;
+  }
+
+  #background-video {
+      width: 100%;
+      height: auto;
   }
 }
