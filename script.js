@@ -21,13 +21,13 @@ document.getElementById("mute-btn").addEventListener("click", function () {
 });
 
 const video = document.getElementById('background-video');
-// Aumenta para fullscreen quando o cursor entra no vídeo
-video.addEventListener('mouseenter', () => {
-  video.classList.add('fullscreen');
-});
-
-// Retorna ao tamanho original quando o cursor sai do vídeo
-video.addEventListener('mouseleave', () => {
-  video.classList.remove('fullscreen');
+let isFullscreen = false;
+video.addEventListener('click', () => {
+  if (isFullscreen) {
+    video.classList.remove('fullscreen'); 
+  } else {
+    video.classList.add('fullscreen'); 
+    }
+    isFullscreen = !isFullscreen; 
 });
 

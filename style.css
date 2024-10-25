@@ -6,6 +6,20 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   min-height: 100%;
+  background: linear-gradient(45deg, 
+  #b42d14,
+  #fe8c05,  
+  #d2de38,  
+  #02697e
+);
+background-size: 400% 400%; /* Animação suave do gradiente */
+animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 
@@ -163,21 +177,37 @@ p {
 
 /* Estilos para o vídeo de fundo */
 #background-video {
-  float: right; 
-  padding: 50px; 
-  margin: 50px;
+  width: 600px;
+  height: 400px;
+  transition: all 0.5s ease;
+  object-fit: cover;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 #background-video.fullscreen {
-  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
-  z-index: 100px;
+  z-index: 1000; 
+  margin: 0;
+  border-radius: 0;
 }
 
 .texto{
   padding: 150px;
   margin: 50px;
   font-family: "Arima", system-ui;
+}
+
+.lado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaço entre vídeo e texto */
+  margin: 20px;
 }
 
 /* Estilos para o controle de áudio */
